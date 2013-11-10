@@ -6,6 +6,7 @@ http://rhoconlinux.wordpress.com/wp-admin/post.php?post=744&action=edit&message=
 ### installation
 
 1) Extract the zip file to the themes directory i.e. `/usr/share/themes/`
+
 2) Apply the theme with Gnome-tweak, Ubuntu-tweak or Elementary-tweaks. 
 
 ### Manual installation
