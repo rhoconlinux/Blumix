@@ -1,31 +1,23 @@
-Numix is a modern flat theme with a combination of light and dark elements. It supports Gnome, Unity, XFCE and Openbox.
+Blumix is a Mod of Numix, but clearer and bluer :P
+
+Description and stuff:
+http://rhoconlinux.wordpress.com/wp-admin/post.php?post=744&action=edit&message=6&postpost=v2
+
+### installation
+
+1) Extract the zip file to the themes directory i.e. `/usr/share/themes/`
+2) Apply the theme with Gnome-tweak, Ubuntu-tweak or Elementary-tweaks. 
 
 ### Manual installation
 
-Extract the zip file to the themes directory i.e. `/usr/share/themes/`
+
 
 To set the theme in Gnome, run the following commands in Terminal,
 
 ```
-gsettings set org.gnome.desktop.interface gtk-theme "Numix"
-gsettings set org.gnome.desktop.wm.preferences theme "Numix"
+gsettings set org.gnome.desktop.interface gtk-theme "Blumix" && gsettings set org.gnome.desktop.wm.preferences theme "Blumix"
 ```
 
-To set the theme in Xfce, run the following commands in Terminal,
 
-```
-xfconf-query -c xsettings -p /Net/ThemeName -s "Numix"
-xfconf-query -c xfwm4 -p /general/theme -s "Numix"
-```
-
-### Requirements
-
-GTK+ 3.6 or above
-
-Murrine theme engine
-
-### Code and license
-
-Report bugs or contribute at [GitHub](https://github.com/shimmerproject/Numix)
-
+More on Numix:  [Numix@GitHub](https://github.com/shimmerproject/Numix)
 License: GPL-3.0+
