@@ -8,7 +8,7 @@ Screenshots:
 http://rhoconlinux.wordpress.com/2013/11/10/blumix-mod-de-numix-celestito/
 
 
-*Changelog V0.2*
+*Changelog V0.2 [Nov. 2013]* 
 
 · New colored buttons and SVG assets of the theme 
 
