@@ -3,7 +3,7 @@ Blumix
 
 Blumix: Minimal Blue-ish Mod for Numix Gtk3 Theme
 
-![alt tag](https://raw.github.com/rhoconlinux/Blumix/blob/master/Blumix/Banner/blumix1.png)
+![alt tag](http://th05.deviantart.net/fs71/PRE/f/2013/319/0/e/_gtk_3_8_3_10_theme__blumix_v0_2_by_rhoconlinux-d6ubnfh.png)
 
 Screenshots:
 -----------
