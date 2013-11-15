@@ -1773,7 +1773,7 @@ GtkStatusbar {
  **********/
 GtkSwitch {
     padding: 0;
-    border-radius: 2px;
+    border-radius: 7px;
     font: bold condensed;
 }
 
@@ -1794,7 +1794,7 @@ GtkSwitch.slider:insensitive {
 GtkSwitch.trough {
     border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 0.95);
-    background-image: none;
+    background-image: none
     color: @theme_fg_color;
 }
 
