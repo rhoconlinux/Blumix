@@ -5,18 +5,20 @@ Blumix Gtk3.10
 
 ![alt tag](http://)
 
-Screenshots:
------------
 
 Install it:
 -----------
-**Manual: **Download the file from here, deviant-art or gnome-look. Uncompress the stuff. Browse the uncompressed content and copy the folder named Blumix in /usr/share/themes (*this will require root access*). Apply it with your favourite tunning tool (gnome-tweaks, unity-tweak, ubuntu-tweak... etc.).
+### **Manual: **
+Download the file from here, deviant-art or gnome-look. Uncompress the stuff. Browse the uncompressed content and copy the folder named Blumix in /usr/share/themes (*this will require root access*). Apply it with your favourite tunning tool (gnome-tweaks, unity-tweak, ubuntu-tweak... etc.).
 
-**Ninja Install** (yeah): just copy-paste this line in your terminal. Press <kbd>Enter</kbd>. Magic will happen. 
+#### **Ninja Install** (yeah): 
+just copy-paste this line in your terminal. Press <kbd>Enter</kbd>. Magic will happen. 
 
 ```
 mkdir -p ~/blumix-install && cd ~/blumix-install && wget https://github.com/rhoconlinux/Blumix/archive/master.zip && unzip master.zip && cd Blumix-master && sudo cp -a Blumix /usr/share/themes/Blumix1.0 && gsettings set org.gnome.desktop.interface gtk-theme "Blumix1.0" && cd ~ && rm -R ~/blumix-install/
 ```
+Screenshots:
+-----------
 
 
 What's new:
@@ -34,6 +36,8 @@ Changelog **V1.0** (yey!) [Feb. 2014]
 	*Menu-button policy
 	*Use of pixmap to force fixing some stuff
 - **New Window Borders:** Focused (unfocused) effect, rounding, lateral borders fix, new buttons, elements ported to svg.
+- First granite wigets integration (Elementary OS). New tabs, colors and stuff. :P
+- 
 -** Nautilus:** complete rework. Now it is minimal. But really minimal. (oh!... and usable too!). :)   
 
 -  **New dependences. **It now requires an additional engine to draw pixmaps (besides murrine). In ubuntu, run in a terminal the following line in order to install it: `sudo apt-get install -y gtk2-engines-murrine  gtk2-engines-pixbuf` 
