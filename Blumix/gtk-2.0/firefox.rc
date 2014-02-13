@@ -1,0 +1,74 @@
+# ==============================================================================
+# FIREFOX SPECIFIC SETTINGS
+# ==============================================================================
+
+style	"ff-statusbar"
+{
+	xthickness	= 4
+	ythickness	= 3
+}
+
+style "ff-tool" = "menubar"
+{
+	GtkToolbar:: shadow-type = GTK_SHADOW_NONE
+}
+
+widget	"MozillaGtkWidget*Toolbar*"		style	"ff-tool"
+widget	"MozillaGtkWidget*Statusbar*"	style	"ff-statusbar"
+
+
+# ------------------------------------------------------------------------------
+# Some Firefox (3.0/3.5) GTK widgets hierarchy (maybe useful for someone)
+# ------------------------------------------------------------------------------
+
+# Top toolbars (and maybe others)
+#widget	"MozillaGtkWidget.GtkFixed.GtkHandleBox.GtkToolbar"	style	"theme-dark-toolbar"
+
+# Findbar entry, gecko (all html) entry
+#widget	"MozillaGtkWidget.GtkFixed.GtkEntry"	style	"theme-dark-entry"
+
+# ALL buttons
+#widget	"MozillaGtkWidget.GtkFixed.GtkButton"	style	"theme-dark-button"
+
+
+
+# c-basic-offset: 4; tab-width: 4; indent-tabs-mode: t
+# vi: set shiftwidth=4 tabstop=4 noexpandtab:
+# :indentSize=4:tabSize=4:noTabs=false:
+
+# ==============================================================================
+# FIREFOX SPECIFIC SETTINGS
+# ==============================================================================
+
+style "ff-default" {
+	GtkCheckButton	::indicator-size	= 14
+}
+
+style "ff-scrollbar" {
+	xthickness = 0
+	ythickness = 0
+
+	GtkScrollbar		::slider-width						= 9
+	GtkScrollbar		::min_slider_length					= 46
+	GtkScrollbar		::trough-border						= 0
+	GtkScrollbar		::trough-side-details				= 4
+	GtkScrollbar		::stepper-size						= 0
+	GtkScrollbar		::has-backward-stepper				= 0
+	GtkScrollbar		::has-forward-stepper				= 0
+	GtkScrollbar		::has-secondary-backward-stepper	= 0
+	GtkScrollbar		::trough-under-steppers				= 0
+	GtkScrolledWindow	::scrollbars-within-bevel			= 0
+
+}
+
+widget	"MozillaGtkWidget*"	style	"ff-default"
+widget	"MozillaGtkWidget*crollbar*"	style	"ff-scrollbar"
+
+
+
+
+
+
+
+
+

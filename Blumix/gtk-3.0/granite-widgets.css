@@ -1,0 +1,403 @@
+/* Copyright 2011-2013 elementary LLC.
+*
+* This file is part of the elementary GTK theme.
+*
+* The elementary GTK theme is free software: you can redistribute it
+* and/or modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
+*
+* The elementary GTK theme is distributed in the hope that it will be
+* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+* Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with the elementary GTK theme. If not, see http://www.gnu.org/licenses/.
+*/
+
+
+
+
+
+
+/**********************
+ * Notebooks and Tabs *
+ **********************/
+
+
+
+.dynamic-notebook {
+
+    padding-top: 0px; /*marco general de ABAJO de las tabs*/
+    border-width: 0px;
+    border-style: solid;
+    border-color:#dedede; /*fix tab bottom border*/
+    border-radius: 9px;
+    background-color: #dedede;
+    background-image: none;
+    /*background-clip: border-box;*/
+
+
+}
+ /*
+.dynamic-notebook GtkImage:hover .button{
+ 
+   color: @text_color;
+   background-image:   none;
+    background-color:   alpha (#000, 0.02);
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (alpha (#000, 0.29)),
+                     to (alpha (#000, 0.32)));
+}
+*/
+.dynamic-notebook .notebook tab GtkLabel,
+.dynamic-notebook .notebook tab .button GtkLabel,
+.dynamic-notebook .notebook tab GtkImage,
+.dynamic-notebook .notebook tab .button GtkImage,
+.dynamic-notebook GtkLabel,
+.dynamic-notebook GtkImage {
+ 
+   color: #888888;
+    padding-top:5px;
+}
+ 
+.dynamic-notebook GtkLabel {
+            color: @text_color;
+}
+ 
+
+
+.dynamic-notebook tab GtkLabel:insensitive,
+.dynamic-notebook tab GtkImage:insensitive {
+            color: #fff000;
+}
+
+
+.dynamic-notebook .notebook { /*scratch: bottom de toda la barra de tabs... es el marco del cuadro central*/
+    padding: 0px 0 0 0;
+    border-width: 3px 0 0 0;
+    -unico-outer-stroke-style: none;
+    -unico-inner-stroke-style: none;
+    border-radius: 0;
+    border-color: alpha (#dedede, 1.0);
+    background-color: #dedede;
+    -GtkNotebook-tab-overlap: 4px;
+    -GtkNotebook-initial-gap: 10px;
+}
+
+
+.dynamic-notebook .notebook tab {
+    padding: 0px;
+    border-color: shade(@theme_bg_color, 1.0); /*tab inactiva*/
+    border-radius: 0;
+    background-color: shade(@theme_bg_color, 1.0); /*tab inactiva*/
+    padding-right: 9px;
+    background-image: radial-gradient(60% 55%, closest-side, 
+                                    shade(@theme_bg_color, 0.08),
+                                    shade(@theme_bg_color, 1.0) 85%,
+                                    shade(@theme_bg_color, 1.0));
+
+}
+
+.dynamic-notebook .notebook tab:nth-child(first) {
+    border-width: 0 1px 0 1px;
+    -unico-inner-stroke-width: 0 1px 0 1px;
+}
+
+.dynamic-notebook .notebook tab:active {
+    border-color: #dedede;
+    border-width:0;
+    background-color:#dedede;
+    padding-right: 9px;
+/*
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+*/
+    border-radius:12px;
+    color: #333333;
+    background-image: linear-gradient(to right,
+                                    shade(@theme_bg_color, 1.0),
+                                    shade(@theme_bg_color, 1.0) 25%,
+                                    shade(@theme_bg_color, 1.04) 93%,
+                                    shade(@theme_bg_color, 1.06) 96%,
+                                    shade(@theme_bg_color, 0.85) 96%,
+                                    shade(@theme_bg_color, 1.0) 98%,
+                                    shade(@theme_bg_color, 1.0));
+}
+
+
+
+/**************
+ * SourceList *
+ *************/
+.source-list,
+.source-list.view {
+
+    background-color: #dee4eb;
+    
+    color: shade (@bg_color, 0.50);
+    border-color: #b4b4b4;
+    
+}
+
+.source-list {
+    -GtkTreeView-horizontal-separator: 1px;
+    -GtkTreeView-vertical-separator: 3px;
+}
+
+.source-list.category-expander {
+    color: #dee4eb;
+border-color: #dee4eb;
+}
+
+.source-list.view:selected,
+.source-list.view:prelight:selected {
+
+    color: #f3f3f3;
+
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-color: #9CA8C5;
+    
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (shade (@selected_bg_color, 1.20)),
+                    to (shade (@selected_bg_color, 0.9)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (shade (@selected_bg_color, 1.05)),
+                    to (shade (@selected_bg_color, 0.88)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#fff, 0.30)),
+                    to (alpha (#fff, 0.06)));
+
+}
+
+.source-list.category-expander:hover  {
+
+color: @text_color;
+border-color: @text_color;
+}
+
+.source-list.view:selected:backdrop,
+.source-list.view:prelight:selected:backdrop {
+
+color:  shade (@bg_color, 0.50);
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (alpha (#000, 0.08)),
+                    to (alpha (#000, 0.04)));
+border-color: alpha (#000, 0.08);
+
+}
+
+.source-list.view:prelight {
+     background-color:@transparent; 
+}
+
+/*
+.sidebar-pane-separator,
+.sidebar-pane-separator:prelight,
+.sidebar-pane-separator:selected {
+
+    -unico-centroid-texture: none;
+    border-width: 0;
+    -GtkPaned-handle-size: 1;
+    background-image: none;
+    background-color: shade (@bg_color, 0.75);
+    
+    border-color: shade (@bg_color, 0.75);
+}
+*/
+
+.source-list.badge,
+.source-list.badge:prelight,
+.source-list.badge:selected,
+.source-list.badge:prelight:selected {
+    background-image: none;
+    background-color: #8899A9;
+    color: #f3f3f3;
+    font: bold;
+    border-radius: 10px;
+    padding: 2 8 2px 8;
+    margin: 3px;
+    text-shadow: 0 1 alpha (#000, 0.1);
+    icon-shadow: 0 1 alpha (#000, 0.1);
+    border-width: 0;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+}
+
+.source-list.badge:selected,
+.source-list.badge:prelight:selected {
+    color: @bg_color;
+}
+
+.source-list.badge:selected:backdrop,
+.source-list.badge:selected:prelight:backdrop {
+    background-image: none;
+    background-color: alpha (#000, 0.2);
+    color: shade (@bg_color, 0.95);
+    text-shadow: 0 1 alpha (#000, 0.1);
+    icon-shadow: 0 1 alpha (#000, 0.1);
+}
+
+
+
+/*************
+ * Statusbar *
+ ************/
+
+
+
+GraniteWidgetsStatusBar {
+    padding: 1px;
+
+      background-image: -gtk-gradient (linear,
+            left top,
+            left bottom,
+            from (#4d5055),
+            to (#313539));
+		     
+    border: 1px solid;
+		     border-color: #333;
+    border-top-width: 1px;
+
+    border-top-color: shade (#686868, 0.52);
+      border-bottom-color: shade (#686868, 0.52);
+    
+    -unico-inner-stroke-width: 1px;
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                     left bottom, left top,
+                     from (alpha (#333, 0.20)),
+                     color-stop (0.20, alpha (#333, 0.05)),
+                     color-stop (0.80, alpha (#333, 0.05)),
+                     to (alpha (#333, 0.50)));
+                    
+    -unico-outer-stroke-style: custom; 
+    -unico-outer-stroke-width: 0;
+
+}
+
+
+/***********
+ * Popover *
+ **********/
+
+GraniteWidgetsPopOver {
+
+    -GraniteWidgetsPopOver-arrow-width: 21;
+    -GraniteWidgetsPopOver-arrow-height: 10;
+    -GraniteWidgetsPopOver-border-radius: 5px;
+    -GraniteWidgetsPopOver-border-width: 1;
+    -GraniteWidgetsPopOver-shadow-size: 12;
+    
+    border-style: solid;
+    border-color: alpha (#000, 0.3);
+    margin: 0;
+}
+
+* .popover_bg {
+    background-color: @transparent;
+    background-image: -gtk-gradient (linear,
+			         left top,
+			         left bottom,
+			         from (alpha (#f9f9f9, 0.97)),
+                     color-stop (0.80, alpha (#f9f9f9, 0.97)),
+			         to (alpha (#f0f0f0, 0.97)));
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: alpha (#000, 0.3);
+}
+
+GraniteWidgetsPopOver .sidebar.view,
+GraniteWidgetsPopOver * {
+    background-color: @transparent;
+}
+
+GraniteWidgetsPopOver .button {
+
+    background-image: none;
+    
+    background-color: alpha (#fff, 0.0);    
+
+    -unico-outer-stroke-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (alpha (#fff, 0.00)),
+                     color-stop (0.80, alpha (#fff, 0.00)),
+                     to (alpha (#fff, 0.40)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (shade (@base_color, 0.80)),
+                     to (shade (@base_color, 0.74)));
+
+}
+
+GraniteWidgetsPopOver .button:active,
+GraniteWidgetsPopOver .button:hover:active {
+
+	background-image: none;
+
+    background-color: alpha (#000, 0.05);
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (shade (@base_color, 0.74)),
+                     to (shade (@base_color, 0.74)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#000, 0.07)),
+                    to (alpha (#000, 0.03)));
+}
+
+GraniteWidgetsPopOver .entry {
+
+    background-image: -gtk-gradient (linear,
+			         left top,
+			         left bottom,
+			         from (shade (@base_color, 0.88)),
+                     color-stop (0.20, shade (@base_color, 0.94)),
+			         to (shade (@base_color, 0.96)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (shade (@base_color, 0.74)),
+                     to (shade (@base_color, 0.76)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#000, 0.07)),
+                    to (alpha (#000, 0.03)));
+}
+
+*.button.app {
+
+border-width: 1px;
+    border-style: solid;
+    border-image: none;
+
+
+}
+
+.app:hover {
+
+    background-color: alpha (#000, 0.08);
+    
+}
+.app:focus {
+
+    background-color: alpha (#000, 0.20);
+
+}

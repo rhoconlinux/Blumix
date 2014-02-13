@@ -1,0 +1,183 @@
+/* base color scheme */
+@define-color bg_color #e6e6e6;
+
+@define-color menubar_bg_color @bg_color;
+@define-color toolbar_bg_color @bg_color;
+/*
+@define-color menubar_bg_color #e2e2e2;
+@define-color toolbar_bg_color #e2e2e2;
+*/
+
+/* default color scheme */
+@define-color fg_color #555555;
+@define-color base_color #f9f9f9;
+@define-color text_color #333333;
+@define-color selected_bg_color #91A6FF; /*plank workaround: exclusive color for dock item glow*/
+@define-color selected_fg_color #f9f9f9;
+@define-color tooltip_bg_color #333333;
+@define-color tooltip_fg_color #f9f9f9;
+
+/* colormap actually used by the theme, to be overridden in other css files */
+@define-color theme_bg_color @bg_color;
+@define-color theme_fg_color @fg_color;
+@define-color theme_base_color @base_color;
+@define-color theme_text_color @text_color;
+@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_fg_color @tooltip_fg_color;
+
+/* shadow effects */
+@define-color light_shadow #fff;
+@define-color dark_shadow #000;
+
+/* misc colors used by gtk+ */
+@define-color info_fg_color rgb (58, 135, 173);
+@define-color info_bg_color rgb (217, 237, 247);
+@define-color warning_fg_color rgb (192, 152, 83);
+@define-color warning_bg_color rgb (252, 248, 227);
+@define-color question_fg_color rgb (214, 73, 55);
+@define-color question_bg_color rgb (252, 229, 213);
+@define-color error_fg_color rgb (185, 74, 72);
+@define-color error_bg_color rgb (242, 222, 222);
+@define-color link_color #fc6f5d;
+@define-color success_color #53a93f;
+@define-color warning_color #f57900;
+@define-color error_color #cc0000;
+
+/* widget colors */
+@define-color menubar_fg_color #5f5f5f;/*cabezales de menu*/
+@define-color toolbar_fg_color #555555;
+@define-color menu_bg_color #eaeaea;/*fondo de la caja del menu*/
+@define-color menu_fg_color #5f5f5f;/*items del menu  desplegado*/
+@define-color panel_bg_color #2d2d2d;
+@define-color panel_fg_color #dcdcdc;
+
+/* osd */
+@define-color osd_base #2d2d2d;
+@define-color osd_fg #dcdcdc;
+@define-color osd_bg alpha(@osd_base, 0.8);
+
+/* window manager colors */
+@define-color wm_bg #2d2d2d;
+@define-color wm_title_focused #dcdcdc;
+@define-color wm_title_unfocused #888888;
+@define-color wm_border_focused #484848;
+@define-color wm_border_unfocused #393939;
+
+
+
+/*************************************************************************/
+/************************NAUTILUS MOD*************************************************/
+/*************************************************************************/
+/*nautilus mod*/
+@define-color sidebar_background #c1c1c1;
+@define-color sidebar_icon       shade(@sidebar_background, 0.70);
+@define-color sidebar_selected_bg shade(@theme_selected_bg_color, 1.00);
+@define-color sidebar_fg_color @theme_text_color;
+
+/*
+NO DUPS CHECK
+@define-color theme_bg_color @bg_color;
+@define-color theme_fg_color @fg_color;
+@define-color theme_base_color @base_color;
+@define-color theme_text_color @text_color;
+@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_fg_color @tooltip_fg_color;
+*/
+
+/* ADDITIONAL COLOR DEFINITIONS */
+/*REDUNDANTS FIRST*/
+/*@define-color theme_selected_bg_color shade(#4a75b8, 1.00);*/
+/* @define-color theme_selected_bg_color shade(#3c81de, 0.90); */
+/*@define-color theme_bg_color @bg_color;*/
+/*@define-color theme_text_color @text_color;*/
+/*@define-color theme_fg_color @fg_color;*/
+/*------------------------------end redundants----*/
+
+@define-color theme_shadow_color alpha(#fff, 0.24);
+@define-color theme_selected_shadow_color alpha(#000, 0.18);
+
+@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_fg_color @tooltip_fg_color;
+@define-color theme_base_color @base_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+@define-color menu_bg_color shade(@theme_bg_color, 1.06);
+@define-color menu_fg_color shade(@theme_fg_color, 1.00);
+@define-color menu_shadow_color @theme_shadow_color;
+
+@define-color theme_bg_dark_color @bg_color;
+@define-color theme_fg_dark_color #737373; /*texto de breadcrumbs no selecctionados*/
+@define-color theme_text_dark_color #737373; /*texto de breadcrumbs selecctionados*/
+@define-color theme_shadow_dark_color alpha(#fff, 0.22);
+@define-color theme_highlight_color alpha(#fff, 0.26);
+
+@define-color theme_button_border_dark shade(@theme_bg_dark_color, 0.75);
+@define-color theme_entry_border_dark @theme_button_border_dark;
+@define-color theme_path_bg_color shade(@theme_bg_dark_color, 0.97);
+@define-color theme_path_active_color shade(@theme_bg_dark_color, 0.95);
+@define-color theme_tab_dark_active1 shade(@theme_bg_dark_color, 0.85);
+@define-color theme_tab_dark_active2 shade(@theme_tab_dark_active1, 1.25);
+@define-color theme_mdi_border_color shade(@theme_bg_dark_color, 0.80);
+
+@define-color menu_shadow_dark_color alpha(#fff, 0.24);
+@define-color menu_bg_dark_color shade(@theme_bg_dark_color, 1.05);
+@define-color menu_fg_dark_color @theme_fg_dark_color;
+@define-color menu_line_dark_color shade(@theme_bg_dark_color, 0.87);
+@define-color menu_line_light_color shade(@theme_bg_dark_color, 1.03);
+/*************************************************************************/
+/************************NAUTILUS MOD*************************************************/
+/*************************************************************************/
+
+
+
+
+
+
+/******
+ * WM *
+ ******/
+@define-color wm_title shade(@theme_fg_color,1.8);
+@define-color wm_unfocused_title @theme_unfocused_fg_color;
+@define-color wm_highlight #ffffff;
+@define-color wm_title_highlight_dark alpha(@bg_color, 0.7);
+@define-color wm_title_highlight #ffffff;
+@define-color wm_title_shadow @wm_title_highlight;
+
+
+/*window border degradee in headerbars*/
+@define-color wm_bg_a shade (@theme_bg_color, 1.0);
+@define-color wm_bg_b @theme_bg_color;
+
+@define-color wm_shadow alpha(#333333, 0.53); /*alto más oscuro*/
+@define-color wm_border shade(@bg_color,1.0);
+
+@define-color wm_button_bg_a shade (@theme_bg_color, 1.0);
+@define-color wm_button_bg_b shade (@theme_bg_color, 0.5);/*.85*/
+@define-color wm_button_bg_c shade (@theme_bg_color, 0.8);
+@define-color wm_button_bg_d shade (@theme_bg_color, 0.9);
+
+@define-color wm_button_bg_hover_a shade (@wm_button_bg_a, 1.1);
+@define-color wm_button_bg_hover_b shade (@wm_button_bg_b, 1.1);
+@define-color wm_button_bg_hover_c shade (@wm_button_bg_c, 1.1);
+@define-color wm_button_bg_hover_d shade (@wm_button_bg_d, 1.1);
+
+@define-color wm_button_bg_active_a shade (@theme_bg_color, 0.7);
+@define-color wm_button_bg_active_b shade (@theme_bg_color, 0.9);
+@define-color wm_button_bg_active_c shade (@theme_bg_color, 0.9);
+
+
+
+
+
+@import url("gtk-widgets.css");
+@import url("gtk-widgets-assets.css");
+@import url("apps/gnome-applications.css");
+@import url("apps/granite-widgets.css");
+@import url("apps/unity.css");
+@import url("apps/xfce.css");
+
+@import url("gtk-widgets-assets.css");
+@import url("granite-widgets.css");
