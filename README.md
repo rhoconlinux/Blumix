@@ -1,16 +1,36 @@
-Blumix Edge
+Blumix Gtk3.10 
 ======
 
-Blumix Edge: Minimal Blue-ish Mod for Numix Gtk3 Theme, it's the latest development (experimental) of Blumix
+**Blumix Gtk Theme: Simple. Clean. Essential.** Started as a minimal Blue-ish Mod for Numix Gtk3 Theme, now, with some perspective, it's growing with its own identity. Supported for gtk3.10, gtk3.6, gtk2and metacity3. :)
 
-![alt tag](http://th05.deviantart.net/fs71/PRE/f/2013/319/0/e/_gtk_3_8_3_10_theme__blumix_v0_2_by_rhoconlinux-d6ubnfh.png)
+![alt tag](http://)
 
 Screenshots:
 -----------
-http://rhoconlinux.wordpress.com/2013/11/10/blumix-mod-de-numix-celestito/
+
+*Changelog V1.0 [Feb. 2014]* 
+
+- **New revisited Gtk3 theme:** Now focused on gtk3.10 *(no further development for previous gtk versions -3.6, 3.8-, sorry)*. New toolbars, Headerbars, Buttons, new buttons-headers-indicators-checks rounding (all over to gain coherence), new neat scrollbars, fixed distances, early version of animations. 
+- **New Gtk2 theme, massively reworked:**  *scrollbars
+	*buttons focus
+	*separators (now are transparent! ^_^)
+	*Handlers (Transparent)
+	*Incresed integration
+- **New Window Borders:** Focused (unfocused) effect, rounding, lateral borders fix, new buttons, elements ported to svg.
+- 
+** Nautilus:** complete rework. Now it is minimal. But really minimal. (oh!... and usable too!). :)   
+
+Check for more info in the blog. Oh, and use google translate if you are not an spanish speaker. :P
+
+
+
+
+
 
 
 *Changelog V0.5 [Dec. 2013]* 
+More in:
+http://rhoconlinux.wordpress.com/2013/11/10/blumix-mod-de-numix-celestito/
 
 · New Gtk2 theme, completely reworked:
 	-scrollbars
