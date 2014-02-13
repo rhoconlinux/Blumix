@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Numix
-Comment=A modern flat theme
+Name=Blumix. Minimalist gtk 3.10 theme. 
+Comment= Simple. Rounded. Essential. 
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Numix
-MetacityTheme=Numix
-ButtonLayout=:minimize,maximize,close
+GtkTheme=Blumix
+MetacityTheme=Blumix
+
