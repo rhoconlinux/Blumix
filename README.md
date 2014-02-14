@@ -8,13 +8,6 @@ Blumix Gtk3.10
 
 Install it:
 -----------
-### Manual:
-Download the file from here, deviant-art or gnome-look. Uncompress the stuff. Browse the uncompressed content and copy the folder named Blumix in /usr/share/themes (*this will require root access*). Apply it with your favourite tunning tool (gnome-tweaks, unity-tweak, ubuntu-tweak... etc.).
-<br>
-
-<br>
-
-
 
 
 ## >> Ninja Install (yeah): 
@@ -31,6 +24,17 @@ mkdir -p ~/blumix-install && cd ~/blumix-install && wget https://github.com/rhoc
 |--------|
 |Please note that **this theme _will require_ murrine, pixbuf and unico engines installed** on your system. If you don't have them, Firefox, Thunderbird, Libreoffice and other gtk2 programs won't draw the theme (and you'll get a win95 look).To install the requiried packages in Ubuntu and derivatives, run: 
 |`sudo apt-get install -y gtk2-engines-murrine gtk2-engines-pixbuf gtk3-engines-unico`
+
+
+
+
+### Manual install:
+Download the file from [here](https://github.com/rhoconlinux/Blumix/archive/master.zip) (or click on the "download" button on the right sidebar). Once you got the file, uncompress the zip. Browse the uncompressed content and copy the folder named **Blumix ** (not *blumix-master*!) in **/usr/share/themes/** (*this will require root access*). Apply it with your favourite tunning tool (gnome-tweaks, unity-tweak, ubuntu-tweak... etc.). You can also pass by and give a like in deviant-art and gnome-look if you feel so. If you see anything odd, please report a bug or drop a comment in [my blog](https://rhoconlinux.wordpress.com/2014/02/13/blumix-1-0-actualizado-el-tema-gtk3-10-minimalismo-nuevo/). 
+
+<br>
+<br>
+
+
 
 
 
