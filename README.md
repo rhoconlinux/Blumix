@@ -30,7 +30,10 @@ Note that **this theme _will require_ murrine, pixbuf and unico engines installe
   
 Screenshots:
 -----------
-Full Review and Screenshots ![here](http://rhoconlinux.wordpress.com/2014/02/13/blumix-1-0-actualizado-el-tema-gtk3-10-minimalismo-nuevo/) (yes, you can translate too, as the whole world do with english, right?)
+Full Review and Screenshots [here](http://rhoconlinux.wordpress.com/2014/02/13/blumix-1-0-actualizado-el-tema-gtk3-10-minimalismo-nuevo/) *(in spanish)*
+
+![Collage](http://rhoconlinux.files.wordpress.com/2014/02/collage.png)
+
 
 
 What's new:
@@ -63,6 +66,12 @@ Check more info on my blog. Oh, and use google translate if you are not an spani
 
 
 
+
+
+
+
+
+- - -
 - - -
 
 OLD STUFF:
