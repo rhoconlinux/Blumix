@@ -3,7 +3,7 @@ Blumix Gtk3.10
 
 **Blumix Gtk Theme: Simple. Clean. Essential.** Started as a minimal Blue-ish Mod for Numix Gtk3 Theme, now, with some perspective, it's growing with its own identity. Supported for gtk3.10, gtk3.6, gtk2and metacity3. :)
 
-![alt tag](http://)
+![alt tag](http://rhoconlinux.files.wordpress.com/2014/02/banner-final.png)
 
 
 Install it:
@@ -17,8 +17,20 @@ just copy-paste this line in your terminal. Press <kbd>Enter</kbd>. Magic will h
 ```
 mkdir -p ~/blumix-install && cd ~/blumix-install && wget https://github.com/rhoconlinux/Blumix/archive/master.zip && unzip master.zip && cd Blumix-master && sudo cp -a Blumix /usr/share/themes/Blumix1.0 && gsettings set org.gnome.desktop.interface gtk-theme "Blumix1.0" && cd ~ && rm -R ~/blumix-install/
 ```
+
+Note that **this theme _will require_ murrine, pixbuf and unico engines installed** on your system. If you don't have them, Firefox, Thunderbird, Libreoffice and other gtk2 programs won't have a theme (getting a win95 look).To install the requiried packages in Ubuntu and derivatives, run: 
+
+| Note |
+|--------|
+|Please note that **this theme _will require_ murrine, pixbuf and unico engines installed** on your system. If you don't have them, Firefox, Thunderbird, Libreoffice and other gtk2 programs won't draw the theme (and you'll get a win95 look).To install the requiried packages in Ubuntu and derivatives, run: 
+|`sudo apt-get install -y gtk2-engines-murrine gtk2-engines-pixbuf gtk3-engines-unico`
+
+
+
+  
 Screenshots:
 -----------
+Full Review and Screenshots ![here](http://rhoconlinux.wordpress.com/2014/02/13/blumix-1-0-actualizado-el-tema-gtk3-10-minimalismo-nuevo/) (yes, you can translate too, as the whole world do with english, right?)
 
 
 What's new:
