@@ -20,6 +20,7 @@ mkdir -p ~/blumix-install && cd ~/blumix-install && wget https://github.com/rhoc
 
 <br>
 <br>
+
 | Note |
 |--------|
 |Please note that **this theme _will require_ murrine, pixbuf and unico engines installed** on your system. If you don't have them, Firefox, Thunderbird, Libreoffice and other gtk2 programs won't draw the theme (and you'll get a win95 look).To install the requiried packages in Ubuntu and derivatives, run: 
