@@ -17,7 +17,7 @@ Download the file from here, deviant-art or gnome-look. Uncompress the stuff. Br
 
 
 
-#### **>> Ninja Install** (yeah): 
+## >> Ninja Install (yeah): 
 just copy-paste this line in your terminal. Press <kbd>Enter</kbd>. Magic will happen. 
 
 ```
