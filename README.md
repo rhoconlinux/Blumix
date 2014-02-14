@@ -12,6 +12,9 @@ Install it:
 Download the file from here, deviant-art or gnome-look. Uncompress the stuff. Browse the uncompressed content and copy the folder named Blumix in /usr/share/themes (*this will require root access*). Apply it with your favourite tunning tool (gnome-tweaks, unity-tweak, ubuntu-tweak... etc.).
 <br>
 
+<br>
+
+
 
 
 #### **>> Ninja Install** (yeah): 
