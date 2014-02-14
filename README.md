@@ -18,8 +18,8 @@ just copy-paste this line in your terminal. Press <kbd>Enter</kbd>. Magic will h
 mkdir -p ~/blumix-install && cd ~/blumix-install && wget https://github.com/rhoconlinux/Blumix/archive/master.zip && unzip master.zip && cd Blumix-master && sudo cp -a Blumix /usr/share/themes/Blumix1.0 && gsettings set org.gnome.desktop.interface gtk-theme "Blumix1.0" && cd ~ && rm -R ~/blumix-install/
 ```
 
-Note that **this theme _will require_ murrine, pixbuf and unico engines installed** on your system. If you don't have them, Firefox, Thunderbird, Libreoffice and other gtk2 programs won't have a theme (getting a win95 look).To install the requiried packages in Ubuntu and derivatives, run: 
-
+<br>
+<br>
 | Note |
 |--------|
 |Please note that **this theme _will require_ murrine, pixbuf and unico engines installed** on your system. If you don't have them, Firefox, Thunderbird, Libreoffice and other gtk2 programs won't draw the theme (and you'll get a win95 look).To install the requiried packages in Ubuntu and derivatives, run: 
@@ -52,13 +52,12 @@ Changelog **V1.0** (yey!) [Feb. 2014]
 	*Use of pixmap to force fixing some stuff
 - **New Window Borders:** Focused (unfocused) effect, rounding, lateral borders fix, new buttons, elements ported to svg.
 - First granite wigets integration (Elementary OS). New tabs, colors and stuff. :P
-- 
--** Nautilus:** complete rework. Now it is minimal. But really minimal. (oh!... and usable too!). :)   
+- Nautilus: complete rework. Now it is minimal. But really minimal. (oh!... and usable too!). :)   
 
 -  **New dependences. **It now requires an additional engine to draw pixmaps (besides murrine). In ubuntu, run in a terminal the following line in order to install it: `sudo apt-get install -y gtk2-engines-murrine  gtk2-engines-pixbuf` 
 
 
-Check more info on my blog. Oh, and use google translate if you are not an spanish speaker. :P 
+Check more info on [my blog](http://rhoconlinux.wordpress.com). Oh, and use google translate if you are not an spanish speaker. :P 
 
 
 
@@ -68,48 +67,5 @@ Check more info on my blog. Oh, and use google translate if you are not an spani
 
 
 
-
-
-
-- - -
-- - -
-
-OLD STUFF:
-
-*Changelog V0.5 [Dec. 2013]* 
-More in:
-http://rhoconlinux.wordpress.com/2013/11/10/blumix-mod-de-numix-celestito/
-
-· New Gtk2 theme, completely reworked:
-	-scrollbars
-	-buttons distance
-	-check buttons
-	-spacing on selected items
-	-New menubars matching the theme
-	-...all that now is coherent with the gtk3 version. 
-
-· New GTk3 menuitem select instance
-· Fixed GTk3 all the buttons and isntances with slightly rounded borders (to be continued in nautilus)
-· Dark-Theme mode taken out. No further support for this is spected. 
-· Bunch of other minor fixes
-
-To-do:
-This project is reaching it's first major release, with all the features about to be implemented. It still lacks work on:
-Terminal scrollbars
-New default Window Border
-Alternative Window Borders
-
-
-*Changelog V0.2 [Nov. 2013]* 
-
-· New colored buttons and SVG assets of the theme 
-
-· New GTk2 theme
-
-· New menu bar, light colored
-
-· New Dark-Theme mode
-
-· Bunch of other minor fixes
 
 
