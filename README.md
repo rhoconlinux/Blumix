@@ -10,7 +10,7 @@ Install it:
 -----------
 
 
-## >> Ninja Install (yeah): 
+## Ninja Install (yeah): 
 just copy-paste this line in your terminal. Press <kbd>Enter</kbd>. Magic will happen. 
 
 ```
