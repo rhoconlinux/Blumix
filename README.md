@@ -1,17 +1,20 @@
 Blumix Gtk3.10 
 ======
 
-**Blumix Gtk Theme: Simple. Clean. Essential.** Started as a minimal Blue-ish Mod for Numix Gtk3 Theme, now, with some perspective, it's growing with its own identity. Supported for gtk3.10, gtk3.6, gtk2and metacity3. :)
+**Blumix Gtk Theme: Simple. Rounded. Essential.** Started as a minimal Blue-ish Mod for Numix Gtk3 Theme, now, with some perspective, it's growing with its own identity. It supports gtk3.10, gtk3.6, gtk2and metacity3. :)
 
 ![alt tag](http://rhoconlinux.files.wordpress.com/2014/02/banner-final.png)
 
 
 Install it:
 -----------
-### **Manual: **
+### Manual:
 Download the file from here, deviant-art or gnome-look. Uncompress the stuff. Browse the uncompressed content and copy the folder named Blumix in /usr/share/themes (*this will require root access*). Apply it with your favourite tunning tool (gnome-tweaks, unity-tweak, ubuntu-tweak... etc.).
+<br>
 
-#### **Ninja Install** (yeah): 
+
+
+#### **>> Ninja Install** (yeah): 
 just copy-paste this line in your terminal. Press <kbd>Enter</kbd>. Magic will happen. 
 
 ```
