@@ -12,9 +12,11 @@ Install it:
 
 ## Ninja Install (yeah): 
 just copy-paste this line in your terminal. Press <kbd>Enter</kbd>. Magic will happen. 
+*(It will ask for super-user permissions to copy the theme in /usr/share/themes)*
 
 ```
-mkdir -p ~/blumix-install && cd ~/blumix-install && wget https://github.com/rhoconlinux/Blumix/archive/master.zip && unzip master.zip && cd Blumix-master && sudo cp -a Blumix /usr/share/themes/Blumix1.0 && gsettings set org.gnome.desktop.interface gtk-theme "Blumix1.0" &&  gsettings set org.gnome.desktop.wm.preferences theme 'Blumix1.0' && cd ~ && rm -R ~/blumix-install/
+mkdir -p ~/blumix-install && cd ~/blumix-install && wget https://github.com/rhoconlinux/Blumix/archive/master.zip && unzip master.zip && cd Blumix-master && sudo rm -Rf --force /usr/share/themes/Blumix1.0/ && sudo cp -a Blumix /usr/share/themes/Blumix1.0 && gsettings set org.gnome.desktop.interface gtk-theme "Blumix1.0" &&  gsettings set org.gnome.desktop.wm.preferences theme 'Blumix1.0' && cd ~ && rm -R ~/blumix-install/
+
 ```
 
 <br>
