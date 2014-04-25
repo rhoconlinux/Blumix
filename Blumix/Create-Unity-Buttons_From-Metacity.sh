@@ -1,0 +1,33 @@
+#!/bin/sh
+#Create unity sub-folder and symlink images from metacity-1 subfolder
+#NOTE: This file should be located at and run from your theme's main folder
+REALPATH=`dirname $(readlink -nf $0)`
+mkdir -p unity
+ln -sf "${REALPATH}/metacity-1/close_focused_normal.png" "${REALPATH}/unity/close.png"
+ln -sf "${REALPATH}/metacity-1/close_focused_normal.png" "${REALPATH}/unity/close_focused_normal.png"
+ln -sf "${REALPATH}/metacity-1/close_focused_prelight.png" "${REALPATH}/unity/close_focused_prelight.png"
+ln -sf "${REALPATH}/metacity-1/close_focused_pressed.png" "${REALPATH}/unity/close_focused_pressed.png"
+ln -sf "${REALPATH}/metacity-1/close_unfocused.png" "${REALPATH}/unity/close_unfocused.png"
+ln -sf "${REALPATH}/metacity-1/close_focused_prelight.png" "${REALPATH}/unity/close_unfocused_prelight.png"
+ln -sf "${REALPATH}/metacity-1/close_focused_pressed.png" "${REALPATH}/unity/close_unfocused_pressed.png"
+ln -sf "${REALPATH}/metacity-1/maximize_focused_normal.png" "${REALPATH}/unity/maximize.png"
+ln -sf "${REALPATH}/metacity-1/maximize_focused_normal.png" "${REALPATH}/unity/maximize_focused_normal.png"
+ln -sf "${REALPATH}/metacity-1/maximize_focused_prelight.png" "${REALPATH}/unity/maximize_focused_prelight.png"
+ln -sf "${REALPATH}/metacity-1/maximize_focused_pressed.png" "${REALPATH}/unity/maximize_focused_pressed.png"
+ln -sf "${REALPATH}/metacity-1/maximize_unfocused.png" "${REALPATH}/unity/maximize_unfocused.png"
+ln -sf "${REALPATH}/metacity-1/maximize_focused_prelight.png" "${REALPATH}/unity/maximize_unfocused_prelight.png"
+ln -sf "${REALPATH}/metacity-1/maximize_focused_pressed.png" "${REALPATH}/unity/maximize_unfocused_pressed.png"
+ln -sf "${REALPATH}/metacity-1/minimize_focused_normal.png" "${REALPATH}/unity/minimize.png"
+ln -sf "${REALPATH}/metacity-1/minimize_focused_normal.png" "${REALPATH}/unity/minimize_focused_normal.png"
+ln -sf "${REALPATH}/metacity-1/minimize_focused_prelight.png" "${REALPATH}/unity/minimize_focused_prelight.png"
+ln -sf "${REALPATH}/metacity-1/minimize_focused_pressed.png" "${REALPATH}/unity/minimize_focused_pressed.png"
+ln -sf "${REALPATH}/metacity-1/minimize_unfocused.png" "${REALPATH}/unity/minimize_unfocused.png"
+ln -sf "${REALPATH}/metacity-1/minimize_focused_prelight.png" "${REALPATH}/unity/minimize_unfocused_prelight.png"
+ln -sf "${REALPATH}/metacity-1/minimize_focused_pressed.png" "${REALPATH}/unity/minimize_unfocused_pressed.png"
+ln -sf "${REALPATH}/metacity-1/unmaximize_focused_normal.png" "${REALPATH}/unity/unmaximize.png"
+ln -sf "${REALPATH}/metacity-1/unmaximize_focused_normal.png" "${REALPATH}/unity/unmaximize_focused_normal.png"
+ln -sf "${REALPATH}/metacity-1/unmaximize_focused_prelight.png" "${REALPATH}/unity/unmaximize_focused_prelight.png"
+ln -sf "${REALPATH}/metacity-1/unmaximize_focused_pressed.png" "${REALPATH}/unity/unmaximize_focused_pressed.png"
+ln -sf "${REALPATH}/metacity-1/unmaximize_unfocused.png" "${REALPATH}/unity/unmaximize_unfocused.png"
+ln -sf "${REALPATH}/metacity-1/unmaximize_focused_prelight.png" "${REALPATH}/unity/unmaximize_unfocused_prelight.png"
+ln -sf "${REALPATH}/metacity-1/unmaximize_focused_pressed.png" "${REALPATH}/unity/unmaximize_unfocused_pressed.png"

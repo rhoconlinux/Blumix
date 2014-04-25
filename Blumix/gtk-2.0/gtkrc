@@ -97,7 +97,7 @@ style "murrine-default" {
 	GtkRange::slider-width = 12
 	GtkRange::stepper-size = 12
 	GtkRange::stepper_spacing = 0
-	GtkRange::trough-under-steppers = 1
+	GtkRange::trough-under-steppers = 5
 
 	GtkScale::slider-length = 16
 	GtkScale::slider-width = 16
@@ -108,8 +108,9 @@ style "murrine-default" {
 	#GtkScrollbar::has-forward-stepper = 0
 	#GtkScrollbar::has-secondary-backward-stepper = 0
 	#GtkScrollbar::has-secondary-forward-stepper = 0
-	GtkScrollbar::min-slider-length = 5
-	#GtkScrollbar::slider-width = 12
+	GtkScrollbar::min-slider-length = 30
+	#GtkScrollbar::slider-width = 25
+    GtkScale ::slider-length = 25
 	#GtkScrollbar::trough-border = 0
 
 	GtkScrolledWindow::scrollbar-spacing = 0 #check
@@ -244,13 +245,23 @@ style "murrine-thin" {
 }
 
 #handlers
-
 style "handle" {
-
 }
-
 class "GtkPaned"	style "handle"
 
+
+
+
+
+#sliders
+style "murrine-scale" {
+	bg[ACTIVE] = shade (0.87, @text_color) #087 porque es blanco entonces para dejarlo del musmo estulo
+  engine "murrine" {
+    roundness  = 2
+    trough_border_shades = { .08, 0.1 }
+    border_shades = { 0.01, 0.01 }    
+  }
+}
 
 
 
@@ -337,10 +348,30 @@ style "murrine-progressbar" = "murrine-wide" {
 	}
 }
 
+
+
+#columns header stiles------------------------------------------fixcolumns
 style "murrine-treeview-header" = "murrine-button" {
   	engine "murrine" {
 		roundness = 2
 	}
+
+    #Fix column header colors---------------------------------
+    xthickness = 0 #5 a ver que hace
+	ythickness = 0
+	bg[NORMAL] = @base_color
+	bg[SELECTED] = @base_color
+	fg[NORMAL] = @base_color
+        engine "pixmap" # for similarity to the GTK3 theme
+            {
+		      image
+                {
+			     function	= BOX
+			     file		= "assets/columns-gray.png"
+			     stretch		= FALSE
+		          }
+	       }
+
 }
 
 style "murrine-treeview" {
@@ -375,7 +406,7 @@ style "murrine-spinbutton" = "murrine-button" {
 }
 
 style "murrine-radiocheck" = "murrine-default" {
-	bg[SELECTED] = @base_color
+	bg[SELECTED] = @base_color                     #fondo de la cajita de los checkboxes. blanco va. 
 	text[NORMAL] = @selected_bg_color
 	text[PRELIGHT] = @selected_bg_color
     GtkCheckButton::indicator-spacing = 2
@@ -467,7 +498,7 @@ style "murrine-menu-item" = "murrine-wider" {
 style "murrine-separator-menu-item" = "murrine-thin" { }
 
 style "murrine-menubar" {
-	bg[NORMAL] = @menubar_bg_color
+	bg[NORMAL] = @menubar_bg_color #fondo de la barra de menu... todo el fondo de lado a lado. 
 	bg[PRELIGHT] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
 	bg[SELECTED] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
 	bg[ACTIVE] = shade (0.9, @menubar_bg_color)
@@ -497,7 +528,7 @@ style "murrine-menubar" {
 }
 
 style "murrine-menubaritem" {
-	bg[NORMAL] = @menubar_bg_color
+	bg[NORMAL] = @menubar_bg_color #items de la barra de menu. texto. sobre la barra. 
 	bg[PRELIGHT] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
 	bg[SELECTED] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
 	bg[ACTIVE] = shade (0.9, @menubar_bg_color)
@@ -792,8 +823,8 @@ style "chrome-gtk-frame" {
 	ChromeGtkFrame::incognito-frame-gradient-color = @menubar_bg_color
 
 	ChromeGtkFrame::scrollbar-trough-color = @bg_color
-	ChromeGtkFrame::scrollbar-slider-normal-color =  mix (0.21, @fg_color, @bg_color)
-	ChromeGtkFrame::scrollbar-slider-prelight-color =  mix (0.31, @fg_color, @bg_color)
+	ChromeGtkFrame::scrollbar-slider-normal-color =  mix (0.21, @selected_bg_color, @bg_color)
+	ChromeGtkFrame::scrollbar-slider-prelight-color =  mix (0.31, @selected_bg_color, @bg_color)
 }
 
 class "ChromeGtkFrame" style "chrome-gtk-frame"
@@ -813,7 +844,7 @@ class "GtkCalendar" style "murrine-wide"
 
 class "GtkSpinButton" style "murrine-spinbutton"
 
-class "GtkScale" style "murrine-scale"
+#fixed down bottom: class "GtkScale" style "murrine-scale"
 class "GtkVScale" style "murrine-vscale"
 class "GtkHScale" style "murrine-hscale"
 
@@ -944,3 +975,9 @@ widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 widget "xfwm4-tabwin*" style "xfwm-tabwin"
 widget_class "*XfsmLogoutDialog*" style "xfsm-logout"
 widget_class "*XfsmLogoutDialog*GtkButton" style "xfsm-logout-button"
+
+
+
+
+#slider fix
+class "GtkScale"      style "murrine-scale"

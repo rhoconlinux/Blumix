@@ -32,7 +32,7 @@
     padding-top: 0px; /*marco general de ABAJO de las tabs*/
     border-width: 0px;
     border-style: solid;
-    border-color:#dedede; /*fix tab bottom border*/
+    border-color:#e6e6e6; /*fix tab bottom border*/
     border-radius: 9px;
     background-color: #e6e6e6;
     background-image: none;
@@ -82,8 +82,8 @@
     -unico-outer-stroke-style: none;
     -unico-inner-stroke-style: none;
     border-radius: 0;
-    border-color: alpha (#dedede, 1.0);
-    background-color: #dedede;
+    border-color: alpha (#e6e6e6, 1.0);
+    background-color: #e6e6e6;
     -GtkNotebook-tab-overlap: 4px;
     -GtkNotebook-initial-gap: 10px;
 }
@@ -108,9 +108,9 @@
 }
 
 .dynamic-notebook .notebook tab:active {
-    border-color: #dedede;
+    border-color: #e6e6e6;
     border-width:0;
-    background-color:#dedede;
+    background-color:#e6e6e6;
     padding-right: 9px;
 /*
     border-top-left-radius:4px;
