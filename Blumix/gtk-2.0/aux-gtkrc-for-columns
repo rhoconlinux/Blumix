@@ -1,0 +1,50 @@
+from https://gitorious.org/phalaxdarkred/phalaxdarkred/source/390c3d0d2d8425b757d8836c547dfd242f4c450a:themes/PhalaxDarkRed/gtk-2.0
+
+
+style "list-header"
+{
+#Comment out the ythickness setting below for thicker column headers.
+ythickness = 0
+GtkTreeView::odd_row_color = "#220000"
+GtkTreeView::even_row_color = "#000000"
+engine "pixmap"
+{
+#This image is used to draw the headers of columns in list views when they are
+#not selected.
+image
+{
+function = BOX
+recolorable = TRUE
+shadow = OUT
+file = "list_header.png"
+border = { 1,1,1,1 }
+stretch = TRUE
+}
+#This image is used to draw the column headers in list views when they are
+#clicked.
+image
+{
+function = BOX
+recolorable = TRUE
+shadow = IN
+file = "menu_hi-light_2.png"
+border = { 1,1,1,1 }
+stretch = TRUE
+}
+#Does this do anything?
+image
+{
+function = BOX
+recolorable = TRUE
+shadow = OUT
+state = PRELIGHT
+file = "menu_hi-light_2.png"
+border = { 1,1,1,1 }
+stretch = TRUE
+}
+}
+}
+widget_class "*List" style "list-header"
+widget_class "*Tree*" style "list-header"
+widget_class "GtkCList" style "list-header"
+
