@@ -84,3 +84,7 @@ Check more info on [my blog](http://rhoconlinux.wordpress.com). Oh, and use goog
 
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rhoconlinux/blumix/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
